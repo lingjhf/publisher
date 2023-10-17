@@ -21,6 +21,7 @@ export default defineConfig({
     target: 'esnext',
     rollupOptions: {
       output: {
+        dir: '../static',
         manualChunks(id) {
           if (id.includes('vuetify')) {
             return 'vuetify'
